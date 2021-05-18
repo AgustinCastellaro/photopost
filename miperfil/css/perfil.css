@@ -1,0 +1,666 @@
+/* Mi Perfil */
+.contenido .miperfil{
+    margin: 50px auto 20px;
+    width: 100vw;
+}
+
+.miperfil .info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0px 15px;
+    max-width: 740px;
+    width: 100%;
+}
+
+.miperfil .info .imagen{
+    margin: 15px auto;
+    width: 125px;
+    height: 125px;
+}
+
+.miperfil .info .imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.miperfil .info p#nombre{
+    text-align: center;
+    font-family: "notosans-bold";
+    font-size: 25px;
+    color: #000000;
+}
+
+.miperfil .info .descripcion{
+    margin: 15px 0px 0px;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.miperfil .info .descripcion p{
+    font-family: "notosans-regular";
+    font-size: 18px;
+    color: #000000;
+}
+
+.miperfil .info .enlaces{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.miperfil .info .enlaces i{
+    font-size: 18px;
+    color: #767676;
+    margin: 0px 10px 0px 0px;
+}
+
+.miperfil .info .enlaces a{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+    text-decoration: none;
+}
+
+.miperfil .info a#editar{
+    display: block;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    margin: 0px auto;
+    padding: 10px 0px;
+    max-width: 230px;
+    width: 100%;
+    background: #077DE5;
+    color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.miperfil .info a#editar:hover{
+    background: #066fca;
+}
+
+.miperfil .submenu{
+    margin: 40px auto 20px;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.miperfil .submenu hr{
+    width: 100%;
+    border: 0.5px solid #e0e0e0;
+}
+
+.miperfil .submenu .opciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    height: 20px;
+}
+
+.miperfil .submenu .opciones .misPublicaciones{
+    margin: 0px 0px 2px;
+    border-bottom: 3px solid #077DE5;
+    cursor: pointer;
+}
+
+.miperfil .submenu .opciones .misPublicaciones button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    margin: 0px 0px 5px;
+    color: #077DE5;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Publicaciones */
+.grid-container{
+    padding: 0px 25px;
+}
+
+.miperfil .mensaje_publicaciones{
+    width: 300px;
+    margin: 25px auto;
+}
+
+.miperfil .mensaje_publicaciones a{
+    text-decoration: none;
+}
+
+.miperfil .mensaje_publicaciones img{
+    display: flex;
+    margin: 0px auto 10px;
+    width: 80px;
+}
+
+.miperfil .mensaje_publicaciones p{
+    font-family: "notosans-regular";
+    font-size: 20px;
+    color: #767676;
+    text-align: center;
+}
+
+
+
+/* Editar Perfil */
+.contenido .editar_perfil{
+    margin: 50px auto 0px;
+    padding: 0px 15px 15px;
+    width: auto;
+}
+
+.editar_perfil .titulo{
+    text-align: center;
+}
+
+.editar_perfil .titulo p{
+    font-family: "notosans-bold";
+    font-size: 20px;
+    color: #1F2733;
+    text-align: center;
+}
+
+.editar_perfil .info{
+    width: 100%;
+}
+
+.editar_perfil .info .imagen{
+    margin: 30px auto;
+    width: 200px;
+}
+
+.editar_perfil .info .imagen .imagen_select{
+    margin: 0px auto;
+    width: 150px;
+    height: 150px;
+}
+
+.editar_perfil .info .imagen .imagen_select input[type="file"]{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.editar_perfil .info .imagen .imagen_select img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.editar_perfil .info .imagen .mensaje{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.editar_perfil .info .imagen p{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+    text-align: center;
+}
+
+.editar_perfil .info .inputs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px auto;
+    max-width: 430px;
+    width: 100%;
+    height: 100%;
+}
+
+.editar_perfil .info .inputs .inputs_group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.editar_perfil .info .inputs .inputs_group .nombre,
+.editar_perfil .info .inputs .inputs_group .apellido,
+.editar_perfil .info .inputs .email,
+.editar_perfil .info .inputs .contraseña{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 15px 0px;
+    height: 70px;
+}
+
+.editar_perfil .info .inputs .inputs_group .nombre label,
+.editar_perfil .info .inputs .inputs_group .apellido label,
+.editar_perfil .info .inputs .email label,
+.editar_perfil .info .inputs .contraseña label{
+    font-family: "notosans-bold";
+    font-size: 15px;
+    color: #000000;
+}
+
+.editar_perfil .info .inputs .inputs_group input[type="text"]{
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    max-width: 180px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.editar_perfil .info .inputs input[type="text"]#email{
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.editar_perfil .info .inputs .inputContraseña{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 40px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.editar_perfil .info .inputs .inputContraseña input{
+    display: flex;
+    width: 50%;
+    height: 30px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: none;
+    background: #ffffff;
+    outline: none;
+}
+
+.editar_perfil .info .inputs .inputContraseña a{
+    margin: 0 0 0 auto;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #077DE5;
+    text-decoration: none;
+}
+
+.editar_perfil .info .inputs .inputContraseña a:hover{
+    text-decoration: underline;
+}
+
+.editar_perfil .descripcion{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 15px 0px;
+    max-width: 430px;
+    width: 100%;
+    height: 180px;
+}
+
+.editar_perfil .descripcion .titulo{
+    width: 100%;
+    height: 30px;
+}
+
+.editar_perfil .descripcion .titulo label{
+    float: left;
+    font-family: "notosans-bold";
+    font-size: 15px;
+    color: #000000;
+}
+
+.editar_perfil .descripcion .titulo .caracteres{
+    margin: 5px 0px 0px auto;
+    width: 100px;
+    height: 30px;
+    text-align: right;
+}
+
+.editar_perfil .descripcion .titulo .caracteres p{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+}
+
+.editar_perfil .descripcion textarea{
+    display: flex;
+    padding: 10px 20px;
+    max-width: 430px;
+    width: 100%;
+    height: 150px;
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+    resize: none;
+}
+
+.editar_perfil .enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+}
+
+.editar_perfil .enlaces .sitioweb,
+.editar_perfil .enlaces .ubicacion{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px 0px 0px;
+    height: 70px;
+}
+
+.editar_perfil .enlaces .instagram label,
+.editar_perfil .enlaces .sitioweb label,
+.editar_perfil .enlaces .ubicacion label{
+    font-family: "notosans-bold";
+    font-size: 15px;
+    color: #000000;
+}
+
+.editar_perfil .enlaces .sitioweb input[type="text"],
+.editar_perfil .enlaces .ubicacion input[type="text"]{
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    max-width: 430px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.editar_perfil .enlaces .instagram{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 15px 0px 0px;
+    height: 70px;
+}
+
+.editar_perfil .enlaces .instagram .input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.editar_perfil .enlaces .instagram input[type="text"]{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    padding: 0px 20px 0px 20px;
+    max-width: 430px;
+    width: 100%;
+    background: #ffffff;
+    border-top: 0.5px solid #767676;
+    border-right: 0.5px solid #767676;
+    border-bottom: 0.5px solid #767676;
+    border-left: none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    outline: none;
+}
+
+.editar_perfil .enlaces .instagram .arroba{
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 0.5px solid #767676;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.editar_perfil .info .inputs .guardar{
+    margin: 30px auto 0px;
+    max-width: 430px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.editar_perfil .info .inputs .guardar button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    background: #077DE5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.editar_perfil .info .inputs .guardar button:hover{
+    background: #066fca;
+    cursor: pointer;
+}
+
+
+
+/* Editar Publicación */
+.contenido .ef-contenido{
+    margin: 50px auto 0px;
+    padding: 0px 15px 15px;
+    width: auto;
+}
+
+.ef-contenido .titulo{
+    margin: 0px 0px 20px;
+}
+
+.ef-contenido .titulo p{
+    font-family: "notosans-bold";
+    font-size: 20px;
+    color: #1F2733;
+    text-align: center;
+}
+
+.ef-contenido .datos{
+    width: 100%;
+}
+
+.ef-contenido .datos .imagen{
+    float: inline-start;
+    margin: 0px auto;
+    max-width: 430px;
+    width: 100%;
+}
+
+.ef-contenido .datos .imagen img{
+    width: 100%;
+    height: auto;
+}
+
+.ef-contenido .datos .comentario{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 430px;
+    width: auto;
+    height: 180px;
+}
+
+.ef-contenido .datos .comentario .titulo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15px;
+}
+
+.ef-contenido .datos .comentario .titulo label{
+    font-family: "notosans-bold";
+    font-size: 15px;
+    color: #000000;
+}
+
+.ef-contenido .datos .comentario .titulo .caracteres{
+    margin: 0px 0px 0px auto;
+    width: 100px;
+    height: 20px;
+    text-align: right;
+}
+
+.ef-contenido .datos .comentario .titulo .caracteres p{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+}
+
+.ef-contenido .datos .comentario textarea{
+    display: flex;
+    padding: 10px 20px;
+    max-width: 430px;
+    width: auto;
+    height: 150px;
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+    resize: none;
+}
+
+.ef-contenido .guardar,
+.ef-contenido .eliminar{
+    margin: 30px auto 0px;
+    max-width: 430px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.ef-contenido .guardar button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    background: #077DE5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.ef-contenido .guardar button:hover{
+    background: #066fca;
+    cursor: pointer;
+}
+
+.ef-contenido .eliminar button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    background: #E74C3C;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.ef-contenido .eliminar button:hover{
+    background: #c54536;
+    cursor: pointer;
+}
+
+
+
+/* Cambiar contraseña */
+.cambiarContraseña{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+}
+
+.cambiarContraseña .titulo{
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.cambiarContraseña .titulo p{
+    font-family: "notosans-bold";
+    font-size: 20px;
+    color: #1F2733;
+    text-align: center;
+}
+
+.cambiarContraseña .datos{
+    width: 100%;
+    height: auto;
+}
+
+.cambiarContraseña .datos .nuevaContraseña,
+.cambiarContraseña .datos .confirmarNuevaContraseña{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 15px 0px;
+    height: 70px;
+}
+
+.cambiarContraseña .datos label{
+    font-family: "notosans-bold";
+    font-size: 15px;
+    color: #000000;
+}
+
+.cambiarContraseña .datos input[type="text"]{
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    max-width: 430px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.cambiarContraseña button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px 0px;
+    background: #077DE5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cambiarContraseña button:hover{
+    background: #066fca;
+}

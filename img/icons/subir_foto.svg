@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="745" height="745" viewBox="0 0 745 745">
+  <g id="flecha_atras" data-name="flecha atras" transform="translate(745.476 -0.497) rotate(90)">
+    <circle id="Elipse_5" data-name="Elipse 5" cx="372.5" cy="372.5" r="372.5" transform="translate(0.497 745.476) rotate(-90)" fill="#767676"/>
+    <g id="icon" transform="translate(211.112 238.799)">
+      <path id="Trazado_79" data-name="Trazado 79" d="M305.572,109.071l.505.111H89.424l68.108-68.258a17.887,17.887,0,0,0,0-25.146l-10.6-10.6a17.727,17.727,0,0,0-25.023-.013L5.162,121.9a17.849,17.849,0,0,0,0,25.109l116.75,116.75a17.743,17.743,0,0,0,25.023,0l10.6-10.6a17.538,17.538,0,0,0,5.165-12.509,17.011,17.011,0,0,0-5.165-12.274l-68.876-68.64H305.814c9.758,0,17.957-8.41,17.957-18.163v-15C323.771,116.823,315.329,109.071,305.572,109.071Z" transform="translate(0)" fill="#f2f2f2"/>
+    </g>
+  </g>
+</svg>

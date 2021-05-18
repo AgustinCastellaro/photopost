@@ -1,0 +1,248 @@
+@media(max-width: 450px){
+    .miperfil .info .descripcion p,
+    .usuario .info .descripcion p{
+        font-size: 15px;
+    }
+    
+    .miperfil .info .enlaces,
+    .usuario .info .enlaces{
+        flex-direction: column;
+    }
+
+    .miperfil .info .enlaces .enlace,
+    .usuario .info .enlaces .enlace{
+        margin: 5px auto;
+    }
+
+    .editar_perfil .info .inputs .inputs_group{
+        display: block;
+        width: 100%;
+    }
+
+    .editar_perfil .info .inputs .inputs_group input[type="text"]{
+        max-width: 430px;
+        width: 100%;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+
+@media(max-width:840px){    
+    nav ul{
+        margin-right: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    nav ul li,
+    nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li a{
+        font-family: "notosans-bold";
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    nav ul li a.login,
+    nav ul li a.subirFoto{
+        background: none;
+        border-radius: 0;
+        padding: 8px 15px;
+    }
+
+    nav ul li a.login:hover,
+    nav ul li a.subirFoto:hover,
+    nav label.show:hover{
+        background: none;
+        color: #066fca;
+    }
+
+    nav ul ul{
+        display: none;
+        position: static;
+        float: none;
+        top: 60px;
+        width: auto;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul li{
+        margin: 0;
+        background: #1F2733;
+        box-shadow: none;
+    }
+
+    nav ul ul li:hover{
+        background: #1F2733;
+    }
+
+    nav ul ul li a{
+        color: #ffffff;
+    }
+
+    nav label.iconMenu{
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        right: 0px;
+        line-height: 60px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav label.iconMenu:hover i{
+        color: #d8d8d8;
+    }
+
+    nav label.show{
+        display: block;
+        color: #ffffff;
+        font-family: "notosans-bold";
+        font-size: 18px;
+        padding: 8px 15px;
+        line-height: 44px;
+        cursor: pointer;
+    }
+
+    nav label.show img{
+        display: none;
+    }
+
+    nav ul li label.show p{
+        display: block;
+    }
+
+    nav ul li label.show p,
+    nav ul li a.img_perfil{
+        visibility: visible;
+    }
+
+    nav ul ul li a i{
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav label.show + a,
+    ul{
+        display: none;
+    }
+    
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+    
+
+    .grid-container{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+
+
+    .publicacion{
+        padding: 0;
+        max-width: 650px;
+    }
+
+    .publicacion .info{
+        padding: 0px 15px;
+    }
+
+    .publicacion .info .usuario .perfil{
+        display: block;
+    }
+
+    .publicacion .info .usuario .datos p{
+        margin: 0px 0px 0px auto;
+    }
+
+    .publicacion .info .usuario .verPerfil{
+        max-width: 430px;
+        margin: 15px 0px 0px;
+    }
+    
+}
+
+
+@media(min-width: 1024px){
+    .contenido .login,
+    .contenido .registrarse{
+        display: flex;
+        padding: 0px 0px 15px;
+    }
+    
+    .login .imagen_fondo,
+    .registrarse .imagen_fondo{
+        display: flex;
+        flex: 0.4;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        float: left;
+    }
+
+    .login .imagen_fondo p,
+    .registrarse .imagen_fondo p{
+        position: relative;
+        margin: 30vh 0px 0px;
+    }
+
+    .login .info,
+    .registrarse .info{
+        flex: 0.6;
+        margin: 30vh 0px 0px;
+    }
+
+    .login .inputs,
+    .registrarse .inputs{
+        margin: 100px auto 0px;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1023px){
+    .contenido .login,
+    .contenido .registrarse{
+        padding: 0;
+    }
+    
+    .login .imagen_fondo,
+    .registrarse .imagen_fondo{
+        display: flex;
+        margin: 0px 0px 15px;
+        max-width: 100vw;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+@media(min-width: 768px){
+    .registrarse .inputs{
+        height: 300px;
+    }
+
+    .registrarse .inputs .inputs_group{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .registrarse .inputs .inputs_group .nombre,
+    .registrarse .inputs .inputs_group .apellido{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .registrarse .inputs .inputs_group input[type="text"]{
+        max-width: 200px;
+    }
+}

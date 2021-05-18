@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+@font-face{
+    font-family: "notosans-bold";
+    src: url("../font/Noto_Sans/NotoSans-Bold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "notosans-regular";
+    src: url("../font/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+}
+
+
+/* Scroll */
+body::-webkit-scrollbar{
+    width: 6px;
+    
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #077DE5;
+    border-radius: 100px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+/* Nav */
+nav{
+    background: #1F2733;
+    padding: 0px 2%;
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    display: flex;
+    float: left;
+    margin: 15px 0px;
+    width: 120px;
+}
+
+nav .logo img{
+    width: 100%;
+}
+
+nav label{
+    margin: 0px 20px 0px 0px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #ffffff;
+}
+
+nav ul{
+    position: relative;
+    list-style: none;
+    float: right;
+    margin: 0px 0px 0px auto;
+}
+
+nav ul li{
+    display: inline-block;
+    float: left;
+    background: #1F2733;
+    margin: 0px 10px;
+    line-height: 0;
+    width: auto;
+}
+
+nav ul li [id^=btn]:checked + ul{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.1s;
+}
+
+nav ul li label.show p,
+nav ul li a.img_perfil{
+    display: none;
+}
+
+nav ul li label.show img{
+    position: absolute;
+    top: 25%;
+    line-height: 0;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    padding: 8px 15px;
+    color: #ffffff;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #077DE5;
+}
+
+nav ul li a.login,
+nav ul li a.subirFoto{
+    padding: 10px 20px;
+    background: #077DE5;
+    border-radius: 4px;
+}
+
+nav ul li a.login:hover,
+nav ul li a.subirFoto:hover{
+    color: #ffffff;
+    background: #066fca;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    background: #ffffff;
+    border-radius: 4px;
+    transition: 0.1s;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.3);
+}
+
+nav ul ul li{
+    display: list-item;
+    position: relative;
+    margin: 0;
+    width: 250px;
+    background: #ffffff;
+}
+
+nav ul ul li:hover{
+    cursor: pointer;
+    background: #ececec;
+}
+
+nav ul ul li:first-child{
+    margin: 10px 0px 0px;
+}
+
+nav ul ul li:last-child{
+    margin: 0px 0px 10px;
+}
+
+nav ul ul li a{
+    line-height: 50px;
+    color: #242424;
+}
+
+nav .show{
+    display: block;
+}
+
+nav input, 
+nav .iconMenu{
+    display: none;
+}
+
+nav .iconMenu .fa-times{
+    display: none;
+}
+
+
+/* Contenido */
+.contenido{
+    width: 100vw;
+}
+
+
+
+/* Alert */
+.contenido .alert{
+    margin: 0px auto 20px;
+    padding: 0;
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    opacity: 1;
+}
+
+.contenido .alert p.success{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #155724;
+    margin: 0px;
+    padding: 15px;
+    background: #D4EDDA;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+}
+
+.contenido .alert p.error{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #A94442;
+    margin: 0px;
+    padding: 15px;
+    background: #F2DEDE;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+}
+
+
+
+/* Login */
+.contenido .login{
+    padding: 15px;
+    width: 100%;
+    height: 100vh;
+}
+
+.login img#logo{
+    display: flex;
+    margin: 0px auto;
+    width: 120px;
+}
+
+.login .imagen_fondo{
+    display: none;
+    max-width: 960px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/imagenes/login/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login .imagen_fondo p{
+    margin: 0px auto;
+    font-family: "notosans-bold";
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.login .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 150px auto 0px;
+    max-width: 430px;
+    width: 100%;
+    height: 280px;
+}
+
+.login .inputs input[type="text"]{
+    display: flex;
+    padding: 0px 20px;
+    max-width: 430px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.login .inputs input[type="password"]{
+    display: flex;
+    padding: 0px 20px;
+    max-width: 430px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.login .inputs .login_btn{
+    margin: 0px auto;
+    max-width: 430px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.login .inputs .login_btn button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    background: #077DE5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.login .inputs .login_btn button:hover{
+    background: #066fca;
+    cursor: pointer;
+}
+
+.login .inputs .olvidaste_contraseña{
+    display: flex;
+    margin: 0px auto;
+    max-width: 430px;
+    width: 100%;
+}
+
+.login .inputs .olvidaste_contraseña a{
+    margin: 0px auto;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #066fca;
+    text-decoration: none;
+}
+
+.login .inputs .olvidaste_contraseña a:hover{
+    text-decoration: underline;
+}
+
+.login .inputs .l-registrarse{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 210px;
+    height: 20px;
+}
+
+.login .inputs .l-registrarse p{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+    text-decoration: none;
+    float: right;
+}
+
+.login .inputs .l-registrarse a{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #066fca;
+    text-decoration: none;
+    float: right;
+}
+
+.login .inputs .l-registrarse a:hover{
+    color: #066fca;
+    text-decoration: underline;
+}
+
+
+
+/* Olvidaste contraseña */
+.olvidasteContraseña{
+    margin: 100px auto 0;
+    padding: 0 15px;
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+}
+
+.olvidasteContraseña img#logo{
+    display: flex;
+    margin: 0px auto 40px;
+    width: 120px;
+}
+
+.olvidasteContraseña .titulo{
+    font-family: "notosans-bold";
+    font-size: 20px;
+    color: #1F2733;
+    text-align: center;
+}
+
+.olvidasteContraseña .datos .email{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px 0px;
+    height: 70px;
+}
+
+.olvidasteContraseña .datos .email label{
+    font-family: "notosans-bold";
+    font-size: 15px;
+    color: #000000;
+}
+
+.olvidasteContraseña .datos .email input{
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    max-width: 430px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.olvidasteContraseña button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    background: #077DE5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.olvidasteContraseña button:hover{
+    background: #066fca;
+}
+
+
+
+/* Registrarse */
+.contenido .registrarse{
+    padding: 15px;
+    width: 100%;
+    height: 100vh;
+}
+
+.registrarse img#logo{
+    display: flex;
+    margin: 0px auto;
+    width: 120px;
+}
+
+.registrarse .imagen_fondo{
+    display: none;
+    max-width: 960px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/imagenes/registrarse/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.registrarse .imagen_fondo p{
+    margin: 0px auto;
+    font-family: "notosans-bold";
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.registrarse .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 150px auto 0px;
+    max-width: 430px;
+    width: 100%;
+    height: 320px;
+}
+
+.registrarse .inputs .inputs_group{
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.registrarse .inputs .inputs_group .nombre,
+.registrarse .inputs .inputs_group .apellido{
+    margin: 0 0 15px;
+}
+
+.registrarse .inputs input{
+    display: flex;
+    padding: 0 20px;
+    margin: 0 0 15px;
+    max-width: 430px;
+    width: 100%;
+    height: 40px;
+    font-family: "notosans-regular";
+    font-size: 15px;
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+    background: #ffffff;
+    outline: none;
+}
+
+.registrarse .inputs .registrarse_btn{
+    margin: 0px auto;
+    max-width: 430px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.registrarse .inputs .registrarse_btn button{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    background: #077DE5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.registrarse .inputs .registrarse_btn button:hover{
+    background: #066fca;
+    cursor: pointer;
+}
+
+.registrarse .inputs .r-login{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 220px;;
+}
+
+.registrarse .inputs .r-login p{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+    text-decoration: none;
+    float: right;
+}
+
+.registrarse .inputs .r-login a{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #066fca;
+    text-decoration: none;
+    float: right;
+}
+
+.registrarse .inputs .r-login a:hover{
+    color: #066fca;
+    text-decoration: underline;
+}
+
+
+
+/* Grid container */
+.grid-container{
+    margin: 0px auto;
+    max-width: 1500px;
+    width: auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 25px;
+    grid-auto-flow: dense;
+}
+
+.tall{
+    grid-row: span 2;
+}
+
+.grid-container .grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.grid-container .grid-item:hover{
+    cursor: pointer;
+}
+
+.grid-container .grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Modal login */
+.modal_login{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0,0,0,0.60);
+    z-index: 5;
+    overflow-y: auto;
+}
+
+.ml-cerrar{
+    margin: 20px 0px 0px 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.ml-cerrar:hover{
+    cursor: pointer;
+}
+
+.ml-cerrar img{
+    width: 100%;
+    height: 100%;
+}
+
+.modal_login .ml-contenido{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 450px;
+    height: 380px;
+    margin: 250px auto;
+    padding: 50px 60px;
+    border-radius: 4px;
+    background: #ffffff;
+    z-index: 5;
+}
+
+.modal_login .ml-contenido .cabecera{
+    width: 100%;
+    height: 40px;
+}
+
+.modal_login .ml-contenido .cabecera p{
+    font-family: "notosans-bold";
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+}
+
+.modal_login .ml-contenido .ml-registrarse{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+}
+
+.modal_login .ml-contenido .ml-registrarse p{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+    text-align: center;
+}
+
+.modal_login .ml-contenido .ml-registrarse a{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 10px 120px;
+    color: #ffffff;
+    background: #077DE5;
+    border-radius: 4px;
+}
+
+.modal_login .ml-contenido .ml-registrarse a:hover{
+    background: #066fca;
+}
+
+.modal_login .ml-contenido .login{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+}
+
+.modal_login .ml-contenido .login p{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    color: #767676;
+    text-align: center;
+}
+
+.modal_login .ml-contenido .login a{
+    font-family: "notosans-regular";
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 10px 115px;
+    color: #ffffff;
+    background: #1E1E1E;
+    border-radius: 4px;
+}
+
+.modal_login .ml-contenido .login a:hover{
+    background: #0c0c0c;
+}

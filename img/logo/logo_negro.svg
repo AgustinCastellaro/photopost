@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8271" height="2060.15" viewBox="0 0 8271 2060.15">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.817" x2="0.5" y2="0.194" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#155fbf"/>
+      <stop offset="1" stop-color="#077de5"/>
+    </linearGradient>
+  </defs>
+  <g id="logo" transform="translate(-120 -27.55)">
+    <g id="icon" transform="translate(120 27.55)">
+      <rect id="Rectángulo_8" data-name="Rectángulo 8" width="2301.67" height="2060.15" rx="140" fill="url(#linear-gradient)"/>
+      <g id="icon-2" data-name="icon" transform="translate(463.031 457.056)">
+        <g id="Grupo_2" data-name="Grupo 2">
+          <path id="Trazado_3" data-name="Trazado 3" d="M332.4,515.079v-6.717C332.4,375.637,440.137,267.9,572.862,267.9S813.324,375.637,813.324,508.362,705.586,748.823,572.862,748.823c-130.843,0-236.971-103.976-240.462-233.746" transform="translate(114.94 122.215)" fill="#fff"/>
+          <path id="Trazado_4" data-name="Trazado 4" d="M1426.79,294.65h-181.9a84.252,84.252,0,0,1-60.719-25.256L1079.39,164.613A142.26,142.26,0,0,0,978.1,122.7H729.307a142.913,142.913,0,0,0-101.289,41.913L523.235,269.4a86.292,86.292,0,0,1-60.72,25.256H280.624A114.836,114.836,0,0,0,165.9,409.374V1154.4a114.835,114.835,0,0,0,114.724,114.722H509.8V753.276c0-189.684,154.218-343.9,343.9-343.9s343.9,154.218,343.9,343.9-154.217,343.9-343.9,343.9c-93.5,0-178.4-37.614-240.463-98.332v270.284H1426.78A114.834,114.834,0,0,0,1541.5,1154.41V409.374C1541.24,346.236,1489.92,294.65,1426.79,294.65ZM1312.06,581.324a57.227,57.227,0,1,1,57.227-57.227,57.227,57.227,0,0,1-57.227,57.227Z" transform="translate(-165.9 -122.699)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <text id="Photopost" transform="translate(3250 1433)" font-size="1000" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="0" y="0">Photopost</tspan></text>
+  </g>
+</svg>

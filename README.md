@@ -16,6 +16,3 @@ https://photo-post.000webhostapp.com/
 - MySQL
 
 Puede descargar el codigo para verlo a su gusto.
-
-### Licencia 📄
-Este proyecto está bajo mi licencia © Agustin Castellaro.
